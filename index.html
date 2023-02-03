@@ -10,6 +10,9 @@
     <script src="https://kit.fontawesome.com/87580be86a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="topbtn">
+        <i class="fa-solid fa-caret-up"></i>
+</div>
     <div id="header">
         <div class="container">
             <nav>
@@ -43,7 +46,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum ab exercitationem nostrum minima eos consequuntur nam molestiae nesciunt. Hic voluptates dolores ab incidunt accusantium temporibus ipsam nihil, veritatis error officiis? Assumenda dolor temporibus minima corporis eligendi architecto tempora totam.</p>
                     <div class="tab-titles">
                         <p class="tab-links active" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Projects</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="Skills">
@@ -57,7 +60,9 @@
 
                     <div class="tab-contents" id="Experience">
                         <ul>
-                            <li><span>2022</span><br>Intership at Contriver</li>                          
+                            <li><span>2021</span><br>Crop Management System Using DBMS</li>
+                            <li><span>2022</span><br>Youtube Cloning Using HTML,CSS AND JAVASCRIPT</li>
+                            <li><span>2022</span><br>Dron Photography Website Using DJANGO,HTML,CSS AND JAVASCRIPT </li>                          
                         </ul>
                     </div>
 
@@ -88,14 +93,14 @@
 
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
-                    <h1>Web Design</h1>
+                    <h1>UI Design</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, provident!</p>
                     <a href="">Learn More</a>
                 </div>
 
                 <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h1>Web Design</h1>
+                    <h1>APP Design</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, provident!</p>
                     <a href="">Learn More</a>
                 </div>
@@ -182,5 +187,20 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+
+<script>
+    const topbtn = document.getElementById("topbtn");
+    topbtn.addEventListener("click",function(){
+        if(window.scroll(0,0)){
+            topbtn.style.display = "none";
+        }
+        else{
+            window.scroll(0,0);
+        }
+    })
+
+    
+</script>
 </body>
 </html>
